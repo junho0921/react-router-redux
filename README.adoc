@@ -1,0 +1,9 @@
+= react-router-redux
+
+这是一个 `react-router-redux` 的实验demo.
+
+运行的方法:
+
+. `npm i`
+. `npm start`
+. 浏览器打开 `localhost:3000`
