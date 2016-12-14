@@ -2,7 +2,7 @@
  * Created by jiajunhe on 2016/12/7.
  */
 import React from 'react';
-import {getProduct} from "../action/";
+import {ajaxProduct} from "../action/";
 import {connect} from 'react-redux';
 import { goBack, goForward } from 'react-router-redux';
 
@@ -13,10 +13,12 @@ const Heading = () => (
 export const App = React.createClass({
 	componentDidMount () {
 		// 模拟异步请求
-		const _this = this;
-		setTimeout(function () {
-			_this.props.dispatch(getProduct());
-		}, 1000);
+		this.props.dispatch(ajaxProduct());
+
+		// const _this = this;
+		// setTimeout(function () {
+		// 	_this.props.dispatch(getProduct());
+		// }, 1000);
 	},
 	backHistory(){
 		console.log('goBack', goBack, this.props);

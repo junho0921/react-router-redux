@@ -22,11 +22,13 @@ const reducer = combineReducers({
 });
 
 // 需要routerMiddleware中间件才能给store.disptach方法传递react-router-redux的action
-const middleware = routerMiddleware(hashHistory)
+const middleware = routerMiddleware(hashHistory);
+import ReduxThunk from 'redux-thunk';
+
 // 创建store系统
 const store = createStore(
   reducer,
-  applyMiddleware(middleware)
+  applyMiddleware(middleware, ReduxThunk)
 )
 
 // history系统是从Store系统里抽离出来. 让histoty的更新可以调用store.dispatch来更新. ??

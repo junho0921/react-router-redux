@@ -13,19 +13,19 @@ export function addProduct (id){
 		type: ADD_PRODUCT,
 		productId: id
 	}
-};
+}
 
 export function getProduct (){
 	return {
 		type: GET_PRODUCTS,
 		data: ajaxData
 	}
-};
+}
 
-// export function ajaxProduct = (data) => {
-// 	return (state, dispatch) => (
-// 		setTimeout(function () {
-// 			dispatch(getProduct())
-// 		}, 1000)
-// 	)
-// };
+export function ajaxProduct () {
+	return (dispatch, state) => {
+		setTimeout(function () {
+			dispatch(getProduct())
+		}, 1000);
+	}
+}

@@ -17,7 +17,7 @@ const config = {
 		'react-redux': "ReactRedux",
 		"react-router": "ReactRouter",
 		"react-router-redux": "ReactRouterRedux",
-		"redux-thunk" : "var window.ReduxThunk.default",
+		// "redux-thunk" : "var window.ReduxThunk.default",
 		'redux': "Redux"
 	},
 

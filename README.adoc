@@ -7,3 +7,5 @@
 . `npm i`
 . `npm start`
 . 浏览器打开 `localhost:3000`
+
+使用的 `store enhancer` 中间件 有 `redux-thunk` 和 `react-router-redux` 的action...
